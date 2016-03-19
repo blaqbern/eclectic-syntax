@@ -1,10 +1,10 @@
 # Eclectic syntax
 
-This is a bit more elaborate than other syntax themes I've with five (five!) accent colors. Many of the style choices here are deliberately decorative, but I'm still sticking to pretty basic highlighting rules as with other themes I've done. I've made an effort to make this one pretty, I admit it.
+I generally stick to very stripped-down highlighting rules, but I've allowed myself to be more elaborate--and even deliberately decorative in some cases--with this one. Also added support for the excellent [language-babel](atom.io/packages/language-babel) package.
 
 ### Languages supported
 
-- [Babel](atom.io/packages/language-babel)
+- Babel
 - CoffeeScript
 - CSS
 - GitHub flavored markdown
@@ -15,3 +15,8 @@ This is a bit more elaborate than other syntax themes I've with five (five!) acc
 - Ruby
 
 Styling for css includes less, but Sass could be hit or miss.
+
+#### js
+![screenshot-js]('https://github.com/blaqbern/eclectic-syntax/blob/master/screenshot-js.png?raw=true')
+#### json
+![screenshot-json]('https://github.com/blaqbern/eclectic-syntax/blob/master/screenshot-json.png?raw=true')
