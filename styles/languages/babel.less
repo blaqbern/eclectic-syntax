@@ -5,17 +5,25 @@
       color: @accent-3-alt;
     }
   }
+  &.function-call {
+    .entity.name.function,
+    .punctuation.definition.parameters {
+      color: @foreground;
+    }
+  }
+  &.embedded.expression {
+    .punctuation.embedded,
+    .variable {
+      color: @foreground-alt;
+    }
+    .keyword.operator.ternary {
+      color: @accent-3-alt;
+    }
+  }
 }
 
 .support.object.node {
   color: @accent-1;
-}
-
-.entity.name.function,
-.punctuation.definition.parameters {
-  .meta.function-call & {
-    color: @foreground;
-  }
 }
 
 .object.key .string.unquoted {
@@ -23,7 +31,7 @@
 }
 
 .entity.quasi.element {
-  .variable.readwrite,
+  .variable,
   .punctuation {
     color: @string-alt;
   }
