@@ -3,21 +3,24 @@
   &.sass,
   &.scss {
     .variable {
-      color: @string;
+      color: @accent-3;
     }
   }
   .at-rule {
-    color: @accent-1-alt;
-    .punctuation.definition {
-      color: @accent-1;
+    color: @accent-3-alt;
+    .punctuation.definition.keyword {
+      color: @accent-3;
+    }
+    .punctuation.terminator {
+      color: @foreground;
     }
   }
   .entity.other.attribute-name {
-    color: @keyword;
+    color: @accent-1;
   }
   .punctuation.definition {
     &.entity {
-      color: @accent-3;
+      color: @foreground-alt;
     }
   }
   .constant {
