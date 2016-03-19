@@ -18,8 +18,8 @@ Styling for css includes less, but Sass could be hit or miss.
 
 #### js
 
-![screenshot-js]('https://github.com/blaqbern/eclectic-syntax/blob/master/screenshot-js.png?raw=true')
+![screenshot-js](https://github.com/blaqbern/eclectic-syntax/blob/master/screenshot-js.png?raw=true)
 
 #### json
 
-![screenshot-json]('https://github.com/blaqbern/eclectic-syntax/blob/master/screenshot-json.png?raw=true')
+![screenshot-json](https://github.com/blaqbern/eclectic-syntax/blob/master/screenshot-json.png?raw=true)
