@@ -1,0 +1,32 @@
+.source.js {
+  .meta {
+    &.import,
+    &.export {
+      .keyword.control {
+        color: @accent-1;
+      }
+    }
+    &.method-call {
+      .entity.name.function {
+        color: @foreground;
+      }
+    }
+  }
+  .variable.default {
+    color: @accent-1;
+  }
+  .storage {
+    color: @keyword;
+  }
+  .string.template {
+    .embedded {
+      &,
+      &.punctuation,
+      .constant,
+      .variable,
+      .keyword.operator {
+        color: @string-alt;
+      }
+    }
+  }
+}

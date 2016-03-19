@@ -1,0 +1,121 @@
+/*
+  flyweight ────────────────────────────────┐
+  │                                         │
+  │ https://atom.io/themes/flyweight-syntax │
+  │                                         │
+  └─────────────────────────────────── syntax
+*/
+
+@import './editor';
+@import './languages/babel';
+@import './languages/coffee';
+@import './languages/css';
+@import './languages/gfm';
+@import './languages/html';
+@import './languages/java';
+@import './languages/js';
+@import './languages/json';
+@import './languages/jsx';
+@import './languages/ruby';
+@import './syntax-variables';
+
+.keyword {
+  color: @keyword;
+
+  &.regexp {
+    color: @accent-1;
+  }
+
+  &.operator {
+    color: @syntax-text-color;
+    &.regexp {
+      color: @accent-1;
+    }
+    &.in {
+      color: @keyword;
+    }
+    &.comparison {
+      color: @foreground-alt;
+    }
+  }
+
+  &.other.unit {
+    color: @accent-1-alt;
+  }
+}
+.storage {
+  color: @accent-1;
+  &.type {
+    .class.todo {
+      color: @background;
+      background: fadeout(@muted, 50%);
+    }
+  }
+}
+
+.string {
+  color: @string;
+}
+
+.entity {
+  &.name.function {
+    color: @accent-3;
+  }
+}
+
+.constant {
+  color: @syntax-text-color;
+
+  &.numeric {
+    color: @accent-1;
+  }
+
+  &.null {
+    color: @accent-1;
+  }
+
+  &.character.escape {
+    color: @accent-2;
+  }
+  &.boolean {
+    color: @accent-1;
+  }
+}
+
+.comment {
+  color: @muted;
+  font-style: italic;
+}
+
+.variable {
+  color: @syntax-text-color;
+  &.parameter {
+    color: @accent-3-alt;
+  }
+}
+
+.punctuation.definition {
+  &.comment {
+    color: @muted;
+  }
+
+  &.parameters {
+    color: @accent-3-alt;
+  }
+
+  &.string,
+  &.array {
+    color: @string;
+  }
+}
+
+.invalid.illegal {
+  background-color: @string;
+  color: @background;
+}
+
+/*
+  ┌───────────┐
+  │ flyweight │
+  └───────────┘
+*/

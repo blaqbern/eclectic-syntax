@@ -1,0 +1,59 @@
+.colorize-headings(@n: 1) when(@n <= 6) {
+  .markup.heading.heading-@{n} {
+    color: spin(@keyword, 40 * (@n - 1));
+  }
+  .colorize-headings(@n + 1);
+}
+
+.source.gfm {
+  .colorize-headings;
+  .link {
+    color: @accent-1-alt;
+  }
+  .list {
+    color: @accent-1;
+  }
+  .support{
+    background: fadeout(@accent-2, 20%);
+    color: @background;
+    border-radius: 3px;
+  }
+  .quote {
+    color: @syntax-text-color;
+    .support {
+      color: @background;
+      border-radius: 0;
+    }
+  }
+  .table {
+    .border.pipe,
+    .border.header {
+      color: @accent-1;
+    }
+    .border.alignment {
+      color: @accent-3;
+    }
+  }
+  .markup {
+  -webkit-font-smoothing: auto;
+    &.link {
+      color: @accent-1;
+    }
+    &.bold {
+      color: @syntax-text-color;
+      font-weight: bold;
+    }
+    &.italic {
+      color: @syntax-text-color;
+      font-style: italic;
+    }
+    &.strike {
+      text-decoration: line-through;
+    }
+    &.raw {
+      background: fadeout(darken(@background, 15%), 65%);
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+  }
+}

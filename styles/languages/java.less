@@ -1,0 +1,45 @@
+.source.java {
+  .meta {
+    &.class.identifier,
+    &.class.inherited.classes,
+    &.class.implemented.interfaces {
+      .storage.modifier {
+        color: @keyword;
+      }
+    }
+    &.method {
+      &.return-type,
+      &.identifier {
+        .parameter {
+          color: @syntax-text-color;
+        }
+      }
+    }
+  }
+  .storage {
+    &.modifier {
+      color: @accent-1;
+      &.package,
+      &.import {
+        color: @syntax-text-color;
+      }
+    }
+    &.type {
+      color: @string-alt;
+      &.annotation {
+        color: @accent-2;
+      }
+      &.generic {
+        color: @string;
+      }
+    }
+  }
+  .keyword {
+    &.other {
+      &.import,
+      &.package {
+        color: @accent-2;
+      }
+    }
+  }
+}

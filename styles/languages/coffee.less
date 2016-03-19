@@ -1,0 +1,17 @@
+.source.coffee {
+  .storage.function {
+    color: @accent-1;
+  }
+  .string.quoted.double {
+    .embedded {
+      &, &.punctuation {
+        color: @string-alt;
+      }
+    }
+  }
+  .variable.instance {
+    &, .punctuation.definition {
+      color: @keyword-alt;
+    }
+  }
+}

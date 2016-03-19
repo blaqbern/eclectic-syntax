@@ -1,0 +1,16 @@
+{
+  "name": "eclectic-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A dark syntax theme with minimal coloring for minimal distraction.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dark"
+  ],
+  "repository": "https://github.com/blaqbern/eclectic-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

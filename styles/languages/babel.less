@@ -1,0 +1,34 @@
+.meta {
+  &.function,
+  .function.arrow {
+    .variable.other.readwrite {
+      color: @accent-3-alt;
+    }
+  }
+}
+
+.support.object.node {
+  color: @accent-1;
+}
+
+.entity.name.function,
+.punctuation.definition.parameters {
+  .meta.function-call & {
+    color: @foreground;
+  }
+}
+
+.object.key .string.unquoted {
+  color: @foreground-alt;
+}
+
+.entity.quasi.element {
+  .variable.readwrite,
+  .punctuation {
+    color: @string-alt;
+  }
+}
+
+.keyword.control.module {
+  color: @accent-1;
+}
