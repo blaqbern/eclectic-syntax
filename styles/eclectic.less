@@ -85,6 +85,12 @@
 .comment {
   color: @muted;
   font-style: italic;
+  &.block.documentation {
+    &,
+    .punctuation.definition {
+      color: @accent-2;
+    }
+  }
 }
 
 .variable {
