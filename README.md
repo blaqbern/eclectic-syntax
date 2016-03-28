@@ -1,6 +1,6 @@
 # Eclectic syntax
 
-I generally stick to very stripped-down highlighting rules, but I've allowed myself to be more elaborate--and even deliberately decorative in some cases--with this one. Also added support for the excellent [language-babel](atom.io/packages/language-babel) package.
+I generally stick to very stripped-down highlighting rules, but I've allowed myself to be more elaborate--and even deliberately decorative in some cases--with this one. Also added support for the excellent [language-babel](https://atom.io/packages/language-babel) package.
 
 ### Languages supported
 
