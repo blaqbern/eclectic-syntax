@@ -1,16 +1,16 @@
-.source.coffee {
-  .storage.function {
+.syntax--source.syntax--coffee {
+  .syntax--storage.syntax--function {
     color: @accent-1;
   }
-  .string.quoted.double {
-    .embedded {
-      &, &.punctuation {
+  .syntax--string.syntax--quoted.syntax--double {
+    .syntax--embedded {
+      &, &.syntax--punctuation {
         color: @string-alt;
       }
     }
   }
-  .variable.instance {
-    &, .punctuation.definition {
+  .syntax--variable.syntax--instance {
+    &, .syntax--punctuation.syntax--definition {
       color: @keyword-alt;
     }
   }

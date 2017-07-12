@@ -1,43 +1,43 @@
-.source.java {
-  .meta {
-    &.class.identifier,
-    &.class.inherited.classes,
-    &.class.implemented.interfaces {
-      .storage.modifier {
+.syntax--source.syntax--java {
+  .syntax--meta {
+    &.syntax--class.syntax--identifier,
+    &.syntax--class.syntax--inherited.syntax--classes,
+    &.syntax--class.syntax--implemented.syntax--interfaces {
+      .syntax--storage.syntax--modifier {
         color: @keyword;
       }
     }
-    &.method {
-      &.return-type,
-      &.identifier {
-        .parameter {
+    &.syntax--method {
+      &.syntax--return-type,
+      &.syntax--identifier {
+        .syntax--parameter {
           color: @syntax-text-color;
         }
       }
     }
   }
-  .storage {
-    &.modifier {
+  .syntax--storage {
+    &.syntax--modifier {
       color: @accent-1;
-      &.package,
-      &.import {
+      &.syntax--package,
+      &.syntax--import {
         color: @syntax-text-color;
       }
     }
-    &.type {
+    &.syntax--type {
       color: @string-alt;
-      &.annotation {
+      &.syntax--annotation {
         color: @accent-2;
       }
-      &.generic {
+      &.syntax--generic {
         color: @string;
       }
     }
   }
-  .keyword {
-    &.other {
-      &.import,
-      &.package {
+  .syntax--keyword {
+    &.syntax--other {
+      &.syntax--import,
+      &.syntax--package {
         color: @accent-2;
       }
     }

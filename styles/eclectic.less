@@ -6,6 +6,7 @@
   └────────────────────────────────── syntax
 */
 
+@import './syntax-variables';
 @import './editor';
 @import './languages/babel';
 @import './languages/coffee';
@@ -16,106 +17,105 @@
 @import './languages/js';
 @import './languages/json';
 @import './languages/ruby';
-@import './syntax-variables';
 
-.keyword {
+.syntax--keyword {
   color: @keyword;
 
-  &.regexp {
+  &.syntax--regexp {
     color: @accent-1;
   }
 
-  &.operator {
+  &.syntax--operator {
     color: @syntax-text-color;
-    &.regexp {
+    &.syntax--regexp {
       color: @accent-1;
     }
-    &.in {
+    &.syntax--in {
       color: @keyword;
     }
-    &.comparison,
-    &.logical {
+    &.syntax--comparison,
+    &.syntax--logical {
       color: @foreground-alt;
     }
   }
 
-  &.other.unit {
+  &.syntax--other.syntax--unit {
     color: @accent-1-alt;
   }
 }
-.storage {
+.syntax--storage {
   color: @accent-1;
-  &.type {
-    .class.todo {
+  &.syntax--type {
+    .syntax--class.syntax--todo {
       color: @background;
       background: fadeout(@muted, 50%);
     }
   }
 }
 
-.string {
+.syntax--string {
   color: @string;
 }
 
-.entity {
-  &.name.function {
+.syntax--entity {
+  &.syntax--name.syntax--function {
     color: @accent-3;
   }
 }
 
-.constant {
+.syntax--constant {
   color: @syntax-text-color;
 
-  &.numeric {
+  &.syntax--numeric {
     color: @accent-1;
   }
 
-  &.null {
+  &.syntax--null {
     color: @accent-1;
   }
 
-  &.character.escape {
+  &.syntax--character.syntax--escape {
     color: @accent-2;
   }
-  &.boolean {
+  &.syntax--boolean {
     color: @accent-1;
   }
 }
 
-.comment {
+.syntax--comment {
   color: @muted;
   font-style: italic;
-  &.block.documentation {
+  &.syntax--block.syntax--documentation {
     &,
-    .punctuation.definition {
+    .syntax--punctuation.syntax--definition {
       color: @accent-2;
     }
   }
 }
 
-.variable {
+.syntax--variable {
   color: @syntax-text-color;
-  &.parameter {
+  &.syntax--parameter {
     color: @accent-3-alt;
   }
 }
 
-.punctuation.definition {
-  &.comment {
+.syntax--punctuation.syntax--definition {
+  &.syntax--comment {
     color: @muted;
   }
 
-  &.parameters {
+  &.syntax--parameters {
     color: @accent-3-alt;
   }
 
-  &.string,
-  &.array {
+  &.syntax--string,
+  &.syntax--array {
     color: @string;
   }
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--illegal {
   background-color: @string;
   color: @background;
 }

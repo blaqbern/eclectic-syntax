@@ -1,56 +1,56 @@
 .colorize-headings(@n: 1) when(@n <= 6) {
-  .markup.heading.heading-@{n} {
+  .syntax--markup.syntax--heading.syntax--heading-@{n} {
     color: spin(@keyword, 40 * (@n - 1));
   }
   .colorize-headings(@n + 1);
 }
 
-.source.gfm {
+.syntax--source.syntax--gfm {
   .colorize-headings;
-  .link {
+  .syntax--link {
     color: @accent-1-alt;
   }
-  .list {
+  .syntax--list {
     color: @accent-1;
   }
-  .support{
+  .syntax--support{
     background: @muted;
     color: @background;
     border-radius: 3px;
   }
-  .quote {
+  .syntax--quote {
     color: @syntax-text-color;
-    .support {
+    .syntax--support {
       color: @background;
       border-radius: 0;
     }
   }
-  .table {
-    .border.pipe,
-    .border.header {
+  .syntax--table {
+    .syntax--border.syntax--pipe,
+    .syntax--border.syntax--header {
       color: @accent-1;
     }
-    .border.alignment {
+    .syntax--border.syntax--alignment {
       color: @accent-3;
     }
   }
-  .markup {
+  .syntax--markup {
   -webkit-font-smoothing: auto;
-    &.link {
+    &.syntax--link {
       color: @accent-1;
     }
-    &.bold {
+    &.syntax--bold {
       color: @syntax-text-color;
       font-weight: bold;
     }
-    &.italic {
+    &.syntax--italic {
       color: @syntax-text-color;
       font-style: italic;
     }
-    &.strike {
+    &.syntax--strike {
       text-decoration: line-through;
     }
-    &.raw {
+    &.syntax--raw {
       background: fadeout(darken(@background, 15%), 65%);
       border: 1px solid black;
       border-radius: 6px;
